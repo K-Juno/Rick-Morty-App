@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem;
+  background-color: darkslategrey;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
