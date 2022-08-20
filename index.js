@@ -7,7 +7,7 @@ const apiUrl = 'https://rickandmortyapi.com/api/character';
 fetch(apiUrl)
   .then(response => response.json())
 
-  .then(data => {
+   .then(data => {
     createCard(data.results);
     console.log(data);
   });
