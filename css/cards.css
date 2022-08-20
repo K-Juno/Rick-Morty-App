@@ -1,0 +1,7 @@
+.single-character {
+  display: grid;
+  justify-content: space-evenly;
+  margin: 30px;
+  border: 5px solid black;
+  background: linear-gradient(to left, #397743, #F69232);
+}

@@ -1,54 +1,24 @@
-// const { Linter } = require("eslint");
-
-// import toggleApiButton from './js/_apibutton.js';
-console.clear();
-const apiUrl = "https://rickandmortyapi.com/api/character";
-fetch(apiUrl)
-  .then(response => response.json())
+fetch('https://rickandmortyapi.com/api/character/')
+  .then(results => results.json())
   .then(data => {
-    createCards(data.results);
-    // console.log(data);
-  });
+    data.results.map(character => {
+      console.log(data);
 
-function createCards(person) {
+      let section = document.createElement('section')
+      section.classList.add('single-character')
+      section.innerHTML = `<img src=${character.image} alt=${character.name} />
+           <h3>${character.name}</h3>
+           <h4>gender</h4> ${character.gender} 
+           <h4>species</h4> ${character.species}
+           <h4>origin</h4> ${character.origin.name}`
+      document.getElementById('characters').append(section)
 
-  const main = document.querySelector('[data-js=main]');
-  console.log(person);
-  const h2 = document.createElement('h2');
-  h2.textContent = "Characters";
-  main.append(h2);
+    })
+  })
+  .catch(error => console.log(error));
+main.append(section);
 
-  const image = document.createElement('img');
-  main.append(image);
-  image.classList.add('img');
-  image.src = "https://rickandmortyapi.com/api/character/avatar/1.jpeg";
-
-  const section = document.createElement('section');
-  section.classList.add('section');
-  main.append(section);
-
-  const uList = document.createElement('ul');
-  section.append(uList);
-
-  person.forEach(data => {
-    const item = document.createElement('li');
-    main.classList.add('list');
-    uList.append(item);
-
-    const characterData = [
-      `name : ${data.name}`,
-      `gender : ${data.gender}`,
-      `species : ${data.species}`,
-      `img : ${data.image}`,
-    ];
-
-    item.textContent = characterData;
-
-    // console.log(characterData);
-    // const li = document.createElement('li');
-    // ulist.append(li);
-    // characterData.forEach(character => {
-  });
+section.createElement(button);
+function character(characterSkills) {
+  button.toggle.classList(hidden)
 };
-
-// function createItem
