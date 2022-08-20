@@ -11,6 +11,8 @@ body {
   display: none;
 }
 
-.section {
-  background-color: hotpink;
+.main {
+  display: grid;
+  background-color: darkcyan;
+  justify-content: space-evenly;
 }
