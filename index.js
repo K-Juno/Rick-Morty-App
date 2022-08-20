@@ -24,6 +24,10 @@ section.style.backgroundColor="hotpink";
 section.textContent = 'morty'
 main.append(section);
   }
+
+  const characterDetails =  (() => {
+    
+  })
       //console.log(data);
 
 
