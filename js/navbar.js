@@ -4,12 +4,12 @@ export default function navigation() {
   document.getElementById('main_area').prepend(navBar);
 
   const navHome = document.createElement('button');
-  navHome.textContent = "Go Up";
+  navHome.textContent = 'Go Up';
   navHome.classList.add('navbar__item');
   navBar.append(navHome);
 
   const navNext = document.createElement('button');
-  navNext.textContent = "Go Next";
+  navNext.textContent = 'Go Next';
   navNext.classList.add('navbar__item');
   navBar.append(navNext);
-};
+}

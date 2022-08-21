@@ -1,8 +1,12 @@
-.head_title {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.header_image,
+.header_title {
+  max-width: 90vw;
 }

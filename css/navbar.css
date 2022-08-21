@@ -4,8 +4,9 @@
   position: sticky;
   top: 30px;
   right: 30px;
+  margin-left: 80%;
   align-self: flex-end;
-  border: 8px ridge #56F628;
+  border: 8px ridge #56f628;
 }
 
 .navbar__item {
