@@ -1,7 +1,16 @@
-.single-character {
+.subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.single__character {
   display: grid;
   justify-content: space-evenly;
-  margin: 30px;
-  border: 5px solid black;
-  background: linear-gradient(to left, #397743, #F69232);
+  padding: 20px;
+  margin: 50px;
+  border: 2px solid white;
+  color: white;
+  background: linear-gradient(to right, black, #02b2c8);
+  border-radius: 9px;
 }
