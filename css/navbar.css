@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  /* text-align: end; */
+  top: 30px;
+  right: 30px;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  border: 8px ridge #56F628;
+}
+
+.navbar__item {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 30px;
+  right: 30px;
+  align-items: flex-end;
+  font-size: 1.5rem;
+  padding: 5px;
+  background: transparent;
+  color: white;
+}
