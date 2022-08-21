@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -21,3 +22,11 @@ body {
   justify-content: space-evenly;
   margin: 2rem;
 }
+
+ @media (min-width: 768px) and (orientation: landscape) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+} 
