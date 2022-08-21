@@ -6,10 +6,15 @@ export default function navigation() {
   const navHome = document.createElement('button');
   navHome.textContent = 'Go Up';
   navHome.classList.add('navbar__item');
+  const top = () => {
+    document.body.scrollIntoView();
+  };
+  navHome.addEventListener("click", top);
   navBar.append(navHome);
-
+  
   const navNext = document.createElement('button');
   navNext.textContent = 'Go Next';
   navNext.classList.add('navbar__item');
+
   navBar.append(navNext);
 }

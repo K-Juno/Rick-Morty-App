@@ -58,6 +58,7 @@ export default function characterData() {
         section.classList.add('chara_cards');
         section.innerHTML = `<img src=${character.image} alt=${character.name} class="portrait"/>
            <h3>${character.name}</h3>
+           <p>id: ${character.id}</p>
            <p>status: ${character.status}</p>
            <p>species: ${character.species}</p>
            <p>gender: ${character.gender}</p>
