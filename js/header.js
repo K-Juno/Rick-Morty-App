@@ -8,4 +8,5 @@ export default function characterData() {
   const titleImage = document.createElement('img');
   titleImage.src = './assets/Rick_and_Morty.webp';
   header.append(titleImage);
+
 }
