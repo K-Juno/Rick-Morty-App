@@ -1,7 +1,8 @@
-.nav__bar {
+.navbar {
   display: flex;
   flex-direction: column;
   position: sticky;
+  /* text-align: end; */
   top: 30px;
   right: 30px;
   font-size: 1.5rem;
@@ -9,7 +10,7 @@
   border: 8px ridge #56F628;
 }
 
-.nav__bar--item {
+.navbar__item {
   display: flex;
   flex-direction: column;
   position: sticky;

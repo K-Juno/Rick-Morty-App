@@ -39,11 +39,10 @@
 // // // }
 
 export default function characterData() {
-  const head1 = document.createElement('h2');
-  head1.classList.add('subtitle');
-  head1.textContent = "All those Characters";
-  document.getElementById('characters').append(head1);
-
+  const subTitle = document.createElement('h2');
+  subTitle.classList.add('subtitle');
+  subTitle.textContent = "All those Characters";
+  document.getElementById('main_area').append(subTitle);
 
   fetch('https://rickandmortyapi.com/api/character/')
     .then(results => results.json())
@@ -52,14 +51,14 @@ export default function characterData() {
         console.log(data);
 
         let section = document.createElement('section');
-        section.classList.add('single__character');
+        section.classList.add('chara_cards');
         section.innerHTML = `<img src=${character.image} alt=${character.name} class="portrait"/>
            <h3>${character.name}</h3>
            <p>status: ${character.status}</p>
            <p>species: ${character.species}</p>
            <p>gender: ${character.gender}</p>
            <p>origin: ${character.origin.name}</p>`;
-        document.getElementById('characters').append(section);
+        document.getElementById('main_area').append(section);
       });
     })
     .catch(error => console.log(error));
