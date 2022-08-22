@@ -1,6 +1,6 @@
 # World of Ricky & Morty App
 
-This repository is a very first group project by Alex, Barbara, Catharina, Deki, Dominic, Juni and Michael.
+This repository is a very first group project by Alex, Barbara, Catarina, Deki, Dominic, Juni and Michael.
 
 ## Exercise
 
