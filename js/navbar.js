@@ -9,9 +9,9 @@ export default function navigation() {
   const top = () => {
     document.body.scrollIntoView();
   };
-  navHome.addEventListener("click", top);
+  navHome.addEventListener('click', top);
   navBar.append(navHome);
-  
+
   const navNext = document.createElement('button');
   navNext.textContent = 'Go Next';
   navNext.classList.add('navbar__item');
