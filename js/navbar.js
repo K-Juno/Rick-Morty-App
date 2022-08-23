@@ -12,9 +12,23 @@ export default function navigation() {
   navHome.addEventListener('click', top);
   navBar.append(navHome);
 
-  const navNext = document.createElement('button');
+  const navBack = document.createElement('a');
+  navBack.textContent = 'Go Back';
+  navBack.classList.add('navbar__item');
+  navBack.href = '#1';
+
+  const navNext = document.createElement('a');
   navNext.textContent = 'Go Next';
   navNext.classList.add('navbar__item');
+  navNext.href = '#1';
 
-  navBar.append(navNext);
+  let id = 1;
+  navNext.addEventListener('click', () => {
+    navNext.href = '#' + id++;
+  })
+
+  navBack.addEventListener('click', () => {
+    navBack.href = '#' + id--;
+  })
+  navBar.append(navBack, navNext);
 }
